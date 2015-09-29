@@ -1,0 +1,64 @@
+<!--
+Copyright 2015 Arie Timmerman
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">PassBird</string>
+        <string name="intro_message">
+        <![CDATA[
+                Saved passwords
+        ]]>
+    </string>
+
+
+    <string name="rest_generic">https://mobile-deverbinding.rhcloud.com/rest/send</string>
+    <string name="rest_browser_scanned">https://mobile-deverbinding.rhcloud.com/rest/browserScanned</string>
+    <string name="rest_browser_registered">https://mobile-deverbinding.rhcloud.com/rest/browserRegistered</string>
+
+    <string name="title">Title</string>
+    <string name="import_s">Import</string>
+    <string name="domain">Domain</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="delete">Delete</string>
+    <string name="note">Note</string>
+    <string name="item">item</string>
+    <string name="save">Save</string>
+    <string name="dots">…</string>
+    <string name="allow">Allow</string>
+    <string name="allow_and_save">Save and Allow</string>
+    <string name="ignore">Ignore</string>
+    <string name="connect">Add a Link</string>
+    <string name="refresh">Refresh</string>
+    <string name="scan">Scan QR Code</string>
+    <string name="my_links">My Links</string>
+    <string name="title_activity_edit">Edit</string>
+
+    <string name="minimum_special">Minimum special characters</string>
+    <string name="minimum_letters">Minimum number of letters</string>
+    <string name="minimum_numbers">Minimum number of numbers</string>
+    <string name="minimum_length">Minimum password length</string>
+
+    <string name="register_browser_text">Open a PassBird enabled website and scan the QR Code.</string>
+
+    <string name="new_link">New Link</string>
+    <string name="delete_content_description">Delete</string>
+
+    <string name="weblogin">Login</string>
+    <string name="title_activity_login">Login</string>
+
+    <string name="register_text">"A website requests your password."</string>
+    <string name="title_activity_register_browser">Connect a Link</string>
+    <string name="no_session_message">Seems like you don\'t have your webbrowser open, or that the page you\'re browsing does not request a password.</string>
+    <string name="title_activity_generate_password">Generate password</string>
+
+    <string name="description_edit">Make it look good</string>
+    <string name="description_register">Visisted a new website?</string>
+    <string name="description_register_browser">Share your password secure</string>
+    <string name="description_generate">Make it secure</string>
+    <string name="title_activity_import">Import Passwords</string>
+    <string name="import_help">Please tell PassBird what the columns of your file are supposed to mean.</string>
+    <string name="import_help2">Open a CSV file in another app and share it with PassBird. This allows you to import passwords.</string>
+
+</resources>

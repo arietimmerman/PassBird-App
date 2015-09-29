@@ -1,0 +1,57 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:dividerHorizontal"
+    android:showDividers="middle" android:clickable="true"
+    android:focusableInTouchMode="true" >
+
+    <TextView style="@style/Widget.DescriptionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description_register_browser"/>
+
+    <LinearLayout
+        style="@style/PassBird.PaddingLayout">
+
+
+    <TextView style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_browser_text"
+        android:textAppearance="?android:textAppearanceMedium" android:padding="@dimen/margin_medium" android:paddingLeft="@dimen/page_margin" android:paddingRight="@dimen/page_margin"  />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan"
+        android:id="@+id/button"
+        android:background="@drawable/button_grey"
+        android:layout_gravity="center_horizontal" android:onClick="startScanner" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<RelativeLayout
+android:id="@+id/relativelayout_progress"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:visibility="gone"
+android:background="#aa000022" >
+
+<ProgressBar
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminateOnly="true" />
+
+</RelativeLayout>
+
+    </merge>

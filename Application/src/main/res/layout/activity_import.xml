@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="?android:dividerHorizontal"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="top"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="none"
+        android:id="@+id/list_items"
+        >
+
+        <TextView
+            style="@style/Widget.DescriptionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_import" />
+
+        <TextView
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="@string/import_help"
+            android:paddingBottom="20dp"
+            android:id="@+id/import_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:padding="@dimen/margin_medium"
+            android:paddingLeft="@dimen/page_margin"
+            android:paddingRight="@dimen/page_margin"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="@string/import_help2"
+            android:paddingBottom="20dp"
+            android:id="@+id/help_text"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:padding="@dimen/margin_medium"
+            android:paddingLeft="@dimen/page_margin"
+            android:paddingRight="@dimen/page_margin"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

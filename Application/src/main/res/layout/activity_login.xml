@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+
+    android:divider="?android:dividerHorizontal"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/Widget.DescriptionBar"
+        android:text="@string/description_register" />
+
+
+    <LinearLayout style="@style/PassBird.PaddingLayout"
+    >
+
+    <TextView
+        style="@style/CardView.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium"
+        android:paddingLeft="@dimen/page_margin"
+        android:paddingRight="@dimen/page_margin"
+        android:text="@string/register_text"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/edit"
+        android:visibility="gone">
+    <TextView
+        style="@style/PassBird.TextView"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/PassBird.EditText"
+        android:inputType="textNoSuggestions"
+        android:hint="@string/username" />
+
+
+    <TextView
+        style="@style/PassBird.TextView"
+        android:text="@string/password" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/margin_medium"
+            android:paddingLeft="@dimen/page_margin"
+            android:paddingRight="@dimen/page_margin"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <ImageButton
+            android:contentDescription="Show generated password"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:onClick="showGeneratePassword"
+            android:src="@drawable/ic_action_settings" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_green"
+        android:onClick="savePassword"
+        android:id="@+id/button_allow"
+        android:text="@string/allow" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button_grey"
+        android:onClick="ignorePassword"
+        android:text="@string/ignore" />
+
+</LinearLayout>
+
+
+    </LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="import_fields">
+        <item></item>
+        <item>Username</item>
+        <item>Password</item>
+        <item>Domain</item>
+        <item>Url</item>
+        <item>Notes</item>
+    </string-array>
+</resources>

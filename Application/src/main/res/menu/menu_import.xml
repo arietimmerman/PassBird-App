@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.passbird.activity.ImportActivity">
+    <item android:id="@+id/action_import" android:title="@string/import_s"
+        android:orderInCategory="100" android:showAsAction="ifRoom"
+        android:visible="false"/>
+</menu>

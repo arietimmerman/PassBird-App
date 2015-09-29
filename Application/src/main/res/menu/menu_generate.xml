@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.passbird.activity.Edit">
+
+    <item
+        android:id="@+id/save_password"
+        android:title="@string/save"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_forward"
+        />
+
+</menu>

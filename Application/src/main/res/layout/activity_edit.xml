@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.passbird.activity.GeneratePasswordActivity">
+
+    <TextView
+        style="@style/Widget.DescriptionBar"
+        android:text="@string/description_edit" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        tools:context="com.passbird.activity.GeneratePasswordActivity">
+
+        <LinearLayout style="@style/PassBird.PaddingLayout">
+
+            <TextView
+                style="@style/PassBird.TextView"
+                android:text="@string/title" />
+
+            <EditText
+                android:id="@+id/title"
+                style="@style/PassBird.EditText"
+                android:hint="@string/title" />
+
+            <TextView
+                style="@style/PassBird.TextView"
+                android:text="@string/domain"
+                />
+
+            <EditText
+                android:id="@+id/domain"
+                style="@style/PassBird.EditText"
+                android:hint="@string/domain" />
+
+            <TextView
+                style="@style/PassBird.TextView"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/PassBird.EditText"
+                android:hint="@string/username" />
+
+
+            <TextView
+                style="@style/PassBird.TextView"
+                android:text="@string/password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/password"
+                    style="@style/PassBird.EditText"
+                    android:layout_weight="1"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+                <ImageButton
+                    android:contentDescription="Show generated password"
+                    android:layout_width="60dip"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:onClick="showGeneratePassword"
+                    android:src="@drawable/ic_action_settings" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/PassBird.TextView"
+                android:text="@string/note" />
+
+            <EditText
+                android:id="@+id/note"
+                style="@style/PassBird.EditText"
+                android:gravity="top|start"
+                android:hint="@string/dots"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:minLines="2"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

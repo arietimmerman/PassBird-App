@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:id="@+id/slider">
+
+    <TextView style="@style/PassBird.TextView"
+        android:text="@string/minimum_special"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="title"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/page_margin"
+        android:paddingRight="@dimen/page_margin"
+        >
+
+        <SeekBar
+            android:tag="seekbar"
+            android:layout_width="0dp"
+
+
+            android:layout_height="60dip"
+            android:minHeight="60dip"
+            android:maxHeight="60dip"
+            android:layout_weight="1"
+            android:max="10"
+            />
+
+        <TextView
+            android:tag="textview"
+            android:layout_width="60dip"
+            android:layout_height="50dip"
+            android:text="10"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

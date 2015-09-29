@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="nl.arietimmerman.mobilepasswords.Login">
+
+    <item
+        android:id="@+id/edit_button"
+        android:icon="@drawable/ic_mode_edit_black_48dp"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/title_activity_edit" />
+
+    <item
+        android:id="@+id/refresh_button"
+        android:icon="@drawable/ic_autorenew_black_48dp"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:visible="false"
+        android:title="@string/refresh" />
+
+
+</menu>

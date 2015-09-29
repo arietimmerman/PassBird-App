@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:divider="?android:dividerHorizontal"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <TextView
+        android:id="@+id/login_title"
+        style="@style/Widget.DescriptionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout style="@style/PassBird.PaddingLayout">
+
+        <TextView
+            android:id="@+id/password"
+            style="@style/CardView.Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_medium"
+            android:paddingLeft="@dimen/page_margin"
+            android:paddingRight="@dimen/page_margin"
+            android:text="@string/no_session_message"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openBrowserRegister"
+            android:text="@string/connect"
+            android:background="@drawable/button_green"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

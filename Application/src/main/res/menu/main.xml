@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/weblogin"
+        android:visible="false"
+        android:enabled="false"
+        android:title="@string/weblogin"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/login_icon"/>
+
+    <item
+        android:id="@+id/register_browser"
+        android:title="@string/new_link"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/browsers"
+        android:title="@string/my_links"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/import_passwords"
+        android:title="@string/import_s"
+        android:showAsAction="never" />
+
+</menu>
